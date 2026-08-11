@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 80px;
+    background:whitesmoke;
+    padding: 0.5%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .links{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 25px;
+}
+.header .links a{
+    text-decoration: none;
+    color:#333;
+    
+    font-weight: 500;
+}
+.header .links a:hover{
+    color: rgb(112, 161, 229);
+}
+.header .links a.active{
+    color: rgb(112, 161, 229);
+}
+.header .links button{
+    padding: 10px 20px;
+    background: black;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.header .links button:hover{
+    background: rgb(112, 161, 229);
+}
+.content{
+    width: 85%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.content .card{
+    width: 25%;
+    padding:20px;
+    background-color:seashell;
+    border-radius: 20px;
+    box-shadow: 20px  10px 30px rgba(0,0,0,0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:0.9em;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all ease-in 200ms;
+    
+}
+.content .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0px  5px 10px rgba(0,0,0,0.7);
+}
+.content .card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.content .card p{
+    font-size: 13px;
+    color: #333;
+    line-height: 28px;
+    text-align: justify;
+    color: #777;
+    
+}
